@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import PageWrapper from "../../components/common/PageWrapper";
-import KamkajForm from "../../features/kamkaj/KamkajForm";
-import KamkajColumn from "../../features/kamkaj/KamkajColumn";
+import KamKajForm from "../../features/kamkaj/KamKajForm";
+import KamKajColumn from "../../features/kamkaj/KamKajColumn";
 import { useAuth } from "../../context/AuthContext";
 
 function KamKaj() {

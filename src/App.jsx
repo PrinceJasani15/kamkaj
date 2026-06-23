@@ -6,7 +6,7 @@ import Register from "./pages/Register/Register";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Tasks from "./pages/Tasks/Tasks";
 import Notes from "./pages/Notes/Notes";
-import KamKaj from "./pages/kamkaj/Kamkaj";
+import KamKaj from "./pages/KamKaj/KamKaj";
 import Calendar from "./pages/calendar/Calendar";
 import Expenses from "./pages/Expenses/Expenses";
 import Analytics from "./pages/Analytics/Analytics";
