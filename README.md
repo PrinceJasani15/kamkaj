@@ -1,16 +1,108 @@
-# React + Vite
+# KamKaj — Full-Stack SaaS Productivity Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KamKaj is a modern full-stack productivity and work-management application. It helps users manage their daily work, tasks, notes, calendar events, expenses, workflow boards, analytics, profile settings, notifications, and AI assistance from one dashboard.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* JWT-based user authentication
+* User-specific dashboard data
+* Task management with create, edit, delete, search, and completion status
+* Notes management
+* Workflow / Kanban board
+* Calendar events management
+* Expense and income tracking
+* Analytics dashboard with charts
+* Profile management with phone number and company details
+* Settings, theme preferences, and notifications
+* AI assistant interface
+* Responsive dark mode and light mode UI
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
 
-## Expanding the ESLint configuration
+* React.js
+* Vite
+* Tailwind CSS
+* React Router DOM
+* Axios
+* Recharts
+* Framer Motion
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend
+
+* Node.js
+* Express.js
+* PostgreSQL
+* JWT Authentication
+* bcrypt
+* REST APIs
+
+## Project Structure
+
+```text
+Kamkaj/
+├── Backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── migrations/
+│   ├── routes/
+│   └── server.js
+│
+├── src/
+│   ├── components/
+│   ├── context/
+│   ├── features/
+│   ├── pages/
+│   ├── routes/
+│   └── services/
+│
+└── package.json
+```
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/kamkaj.git
+cd kamkaj
+```
+
+### 2. Install frontend dependencies
+
+```bash
+npm install
+npm run dev
+```
+
+### 3. Install backend dependencies
+
+```bash
+cd Backend
+npm install
+npm run dev
+```
+
+## Environment Variables
+
+Create a `.env` file inside the `Backend` folder:
+
+```env
+PORT=4000
+DATABASE_URL=your_postgresql_connection_string
+JWT_SECRET=your_jwt_secret
+```
+
+## Database
+
+The application uses PostgreSQL. Database migration files are available in:
+
+```text
+Backend/migrations/
+```
+
+## Author
+
+Built as a full-stack SaaS dashboard project for learning, portfolio, and interview demonstration.
